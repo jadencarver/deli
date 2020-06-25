@@ -1,0 +1,99 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ALI 2023 DELI GROCERY - BREAKFAST</title>
+<meta http-equiv="refresh" content="30">
+<style>
+          html, body, svg {
+            width: 100%; height: 100%; position: relative;
+            margin: 0; padding: 0;
+            font-family: "Futura", Helvetica, sans-serif;
+            font-size: 25pt;
+          }
+          svg text {
+            text-shadow: 2pt 2pt #000;
+            fill: white;
+          }
+          svg text.h1 {
+            font-family: "Gill Sans", Helvetica, sans-serif;
+            font-size: 2em;
+            font-weight: 200;
+          }
+          svg image.fade {
+            opacity: 0;
+            transform-origin: top left;
+            transform: scale(2.5) translate(0, -100%) rotate(90deg);
+            transition: transform-origin 1s ease-in, opacity 1s ease-in, transform 1s ease-in-out;
+          }
+          svg image.fade:last-child {
+            transition: opacity 1s ease-in;
+          }
+          svg image.fade.in {
+            transform-origin: center center;
+            transform: scale(1) translate(0, 0) rotate(0deg);
+            opacity: 1;
+          }
+          svg g.menu {
+            opacity: 0;
+            transition: opacity 3s;
+          }
+          svg g.menu.foreskin {
+            opacity: 1;
+          }
+        </style>
+<script>
+          (function() {
+            var i = 1;
+            function transitionFn() {
+              var foreskin = document.querySelectorAll("svg g.active.foreskin");
+              for(var j=0; j < foreskin.length; j++) {
+                foreskin[j].classList.remove("foreskin");
+              };
+              var images = document.querySelectorAll("svg g.active image.fade");
+              function activate(image) {
+                image.classList.add("in");
+                image.closest("g.active").classList.add("foreskin");
+              }
+              if (i < images.length) {
+                activate(images[i]); i++;
+              } else {
+                images.forEach(function(e,i) { if (i>0) { e.classList.remove("in"); }});
+                i = 1;
+                activate(images[i]);
+              }
+            };
+            window.addEventListener('DOMContentLoaded', function() {
+              transitionFn();
+              setInterval(transitionFn, 5000);
+            });
+          }())
+        </script>
+</head>
+<body><svg viewbox="0 0 960 600"><defs><linearGradient id="fill-beverage" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="25%" style="stop-color:rgba(0,0,0,0.3)"></stop><stop offset="50%" style="stop-color:rgba(0,0,0,0)"></stop><stop offset="90%" style="stop-color:rgba(0,0,0,1.0)"></stop></linearGradient><linearGradient id="fill-breakfast" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="25%" style="stop-color:rgba(255,255,255,0.3)"></stop><stop offset="50%" style="stop-color:rgba(0,0,0,0)"></stop><stop offset="90%" style="stop-color:rgba(0,0,0,1.0)"></stop></linearGradient><linearGradient id="fill-halal" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="25%" style="stop-color:rgba(0,0,0,0.3)"></stop><stop offset="50%" style="stop-color:rgba(0,0,0,0)"></stop><stop offset="90%" style="stop-color:rgba(0,0,0,0.7)"></stop></linearGradient></defs>
+  <g class="menu active" id="menu-beverage"><g><image class="
+        fade in" width="100%" href="images/beverages-all.jpeg"></image><image class="
+        fade" width="100%" href="images/beverages-coffee.jpeg"></image><image class="
+        fade" width="100%" href="images/beverages-tea.jpeg"></image><image class="
+        fade" width="100%" href="images/beverages-coffee2.jpeg"></image></g><rect x="0" y="0" width="100%" height="100%" fill="url(#fill-beverage)" filter="url(#filter-beverage)" mask="url(#mask-beverage)"></rect><g style="transform: translate(1em, 1em);"><text class="h1" y="1em">Beverages</text><text class="h2" x="20em" y="3em">Small</text><text class="h2" x="24em" y="3em">Large</text><g style="transform: translate(0, 3rem);"><text y="1rem">Tea</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$1.00</text><text y="1.3rem" x="24rem">$1.50</text></g><g style="transform: translate(0, 5rem);"><text y="1rem">Coffee</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$2.00</text><text y="1.3rem" x="24rem">$3.00</text></g><g style="transform: translate(0, 7rem);"><text y="1rem">Flavor Tea</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$1.00</text><text y="1.3rem" x="24rem">$1.50</text></g><g style="transform: translate(0, 9rem);"><text y="1rem">Cappuccino</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$1.00</text><text y="1.3rem" x="24rem">$1.50</text></g><g style="transform: translate(0, 11rem);"><text y="1rem">Hot Chocolate</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$1.00</text><text y="1.3rem" x="24rem">$1.50</text></g><g style="transform: translate(0, 13rem);"><text y="1rem">French Vanilla</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$1.00</text><text y="1.3rem" x="24rem">$1.50</text></g></g></g>
+  <g class="menu active" id="menu-breakfast"><g><image class="
+        fade in" width="100%" href="images/breakfast-panini.jpeg"></image></g><rect x="0" y="0" width="100%" height="100%" fill="url(#fill-breakfast)" filter="url(#filter-breakfast)" mask="url(#mask-breakfast)"></rect><g style="transform: translate(1em, 1em);"><text class="h1" y="1em">Breakfast Menu</text><text class="h2" x="20em" y="3em">Roll</text><text class="h2" x="24em" y="3em">Hero</text><g style="transform: translate(0, 3rem);"><text y="1rem">BLT</text><text y="1.6rem" style="font-size: 0.6em;">Bacon, Lettuce, Tomato</text><text y="1.3rem" x="20rem">$4.00</text><text y="1.3rem" x="24rem">$5.00</text></g><g style="transform: translate(0, 5rem);"><text y="1rem">Egg &amp; Cheese</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$2.00</text><text y="1.3rem" x="24rem">$3.00</text></g><g style="transform: translate(0, 7rem);"><text y="1rem">Bacon, Eggs &amp; Cheese</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$3.50</text><text y="1.3rem" x="24rem">$4.50</text></g><g style="transform: translate(0, 9rem);"><text y="1rem">Pattie Sausage, Eggs &amp; Cheese</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$3.00</text><text y="1.3rem" x="24rem">$4.00</text></g><g style="transform: translate(0, 11rem);"><text y="1rem">Link Sausage, Eggs &amp; Cheese</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$3.50</text><text y="1.3rem" x="24rem"></text></g><g style="transform: translate(0, 13rem);"><text y="1rem">Beef or Turkey, Eggs &amp; Cheese</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$4.00</text><text y="1.3rem" x="24rem">$5.00</text></g><g style="transform: translate(0, 15rem);"><text y="1rem">Pastrami, Eggs &amp; Cheese</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$4.50</text><text y="1.3rem" x="24rem">$5.50</text></g></g></g>
+  <g class="menu active" id="menu-breakfast2"><g><image class="
+        fade in" width="100%" href="images/breakfast-platter.jpeg"></image><image class="
+        fade" width="100%" href="images/breakfast2-avocadotoast.jpeg"></image><image class="
+        fade" width="100%" href="images/breakfast2-avocadotoast2.jpeg"></image><image class="
+        fade" width="100%" href="images/breakfast-frenchtoast.jpeg"></image><image class="
+        fade" width="100%" href="images/breakfast-pancakes.jpeg"></image><image class="
+        fade" width="100%" href="images/breakfast-pancakes2.jpeg"></image><image class="
+        fade" width="100%" href="images/breakfast-pancakes3.jpeg"></image></g><rect x="0" y="0" width="100%" height="100%" fill="url(#fill-breakfast2)" filter="url(#filter-breakfast2)" mask="url(#mask-breakfast2)"></rect><g style="transform: translate(1em, 1em);"><text class="h1" y="1em">Breakfast</text><text class="h2" x="20em" y="3em">Plain</text><text class="h2" x="24em" y="3em">Platter</text><g style="transform: translate(0, 3rem);"><text y="1rem">Avacado Toast</text><text y="1.6rem" style="font-size: 0.6em;">Avacado, Tomato, Feta Cheese</text><text y="1.3rem" x="20rem">$4.00</text><text y="1.3rem" x="24rem"></text></g><g style="transform: translate(0, 5rem);"><text y="1rem">Pancakes</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$5.00</text><text y="1.3rem" x="24rem">$6.00</text></g><g style="transform: translate(0, 7rem);"><text y="1rem">French Toast</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$4.00</text><text y="1.3rem" x="24rem">$5.00</text></g><g style="transform: translate(0, 9rem);"><text y="1rem">Homefries</text><text y="1.6rem" style="font-size: 0.6em;">Bacon or Sausage</text><text y="1.3rem" x="20rem">$3.00</text><text y="1.3rem" x="24rem">$5.00</text></g><g style="transform: translate(0, 11rem);"><text y="1rem">Homefries with Cheese</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$4.00</text><text y="1.3rem" x="24rem">$6.00</text></g><g style="transform: translate(0, 13rem);"><text y="1rem">Western Omlette</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$4.00</text><text y="1.3rem" x="24rem"></text></g><g style="transform: translate(0, 15rem);"><text y="1rem">Egg White Omlette</text><text y="1.6rem" style="font-size: 0.6em;">Spinach, Onions, Peppers, Tomato</text><text y="1.3rem" x="20rem">$4.00</text><text y="1.3rem" x="24rem"></text></g><g style="transform: translate(0, 17rem);"><text y="1rem">Monte Cristo</text><text y="1.6rem" style="font-size: 0.6em;">French Toast, Turkey Ham, Swiss Cheese, and Egg</text><text y="1.3rem" x="20rem">$5.50</text><text y="1.3rem" x="24rem"></text></g></g></g>
+  <g class="menu" id="menu-lunch"><g><image class="
+        fade in" width="100%" href="images/lunch-chicken-parm.jpeg"></image><image class="
+        fade" width="100%" href="images/lunch-chicken-parm.jpeg"></image></g><rect x="0" y="0" width="100%" height="100%" fill="url(#fill-lunch)" filter="url(#filter-lunch)" mask="url(#mask-lunch)"></rect><g style="transform: translate(1em, 1em);"><text class="h1" y="1em">Lunch</text><text class="h2" x="20em" y="3em">Roll</text><text class="h2" x="24em" y="3em">Hero</text><g style="transform: translate(0, 3rem);"><text y="1rem">Philly Cheese Steak</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$4.00</text><text y="1.3rem" x="24rem">$5.00</text></g><g style="transform: translate(0, 5rem);"><text y="1rem">Tuna Melt</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$5.00</text><text y="1.3rem" x="24rem">$6.00</text></g><g style="transform: translate(0, 7rem);"><text y="1rem">Meatball Chicken Parm</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$4.00</text><text y="1.3rem" x="24rem">$5.00</text></g><g style="transform: translate(0, 9rem);"><text y="1rem">Chopped Cheese</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$4.00</text><text y="1.3rem" x="24rem">$5.00</text></g><g style="transform: translate(0, 11rem);"><text y="1rem">Chicken Cutlet</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$4.00</text><text y="1.3rem" x="24rem">$5.00</text></g><g style="transform: translate(0, 13rem);"><text y="1rem">Grilled Chicken BBQ</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$4.00</text><text y="1.3rem" x="24rem">$5.00</text></g><g style="transform: translate(0, 15rem);"><text y="1rem">Lemon Grilled Chicken</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$4.00</text><text y="1.3rem" x="24rem">$5.00</text></g><g style="transform: translate(0, 17rem);"><text y="1rem">Teriyaki Chicken</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$4.00</text><text y="1.3rem" x="24rem">$5.00</text></g><g style="transform: translate(0, 19rem);"><text y="1rem">Chicken Fajita</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$4.00</text><text y="1.3rem" x="24rem">$5.00</text></g><g style="transform: translate(0, 21rem);"><text y="1rem">Buffalo Chicken</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$4.00</text><text y="1.3rem" x="24rem">$5.00</text></g></g></g>
+  <g class="menu" id="menu-dinner"><g><image class="
+        fade in" width="100%" href="images/lunch-chicken-parm.jpeg"></image></g><rect x="0" y="0" width="100%" height="100%" fill="url(#fill-dinner)" filter="url(#filter-dinner)" mask="url(#mask-dinner)"></rect><g style="transform: translate(1em, 1em);"><text class="h1" y="1em">Dinner</text><text class="h2" x="20em" y="3em">Roll</text><text class="h2" x="24em" y="3em">Hero</text><g style="transform: translate(0, 3rem);"><text y="1rem">Philly Cheese Steak</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$4.00</text><text y="1.3rem" x="24rem">$5.00</text></g><g style="transform: translate(0, 5rem);"><text y="1rem">Tuna Melt</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$5.00</text><text y="1.3rem" x="24rem">$6.00</text></g><g style="transform: translate(0, 7rem);"><text y="1rem">Meatball Chicken Parm</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$4.00</text><text y="1.3rem" x="24rem">$5.00</text></g><g style="transform: translate(0, 9rem);"><text y="1rem">Chopped Cheese</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$4.00</text><text y="1.3rem" x="24rem">$5.00</text></g><g style="transform: translate(0, 11rem);"><text y="1rem">Chicken Cutlet</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$4.00</text><text y="1.3rem" x="24rem">$5.00</text></g><g style="transform: translate(0, 13rem);"><text y="1rem">Grilled Chicken BBQ</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$4.00</text><text y="1.3rem" x="24rem">$5.00</text></g><g style="transform: translate(0, 15rem);"><text y="1rem">Lemon Grilled Chicken</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$4.00</text><text y="1.3rem" x="24rem">$5.00</text></g><g style="transform: translate(0, 17rem);"><text y="1rem">Teriyaki Chicken</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$4.00</text><text y="1.3rem" x="24rem">$5.00</text></g><g style="transform: translate(0, 19rem);"><text y="1rem">Chicken Fajita</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$4.00</text><text y="1.3rem" x="24rem">$5.00</text></g><g style="transform: translate(0, 21rem);"><text y="1rem">Buffalo Chicken</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem">$4.00</text><text y="1.3rem" x="24rem">$5.00</text></g></g></g>
+  <g class="menu" id="menu-late"><g></g><rect x="0" y="0" width="100%" height="100%" fill="url(#fill-late)" filter="url(#filter-late)" mask="url(#mask-late)"></rect><g style="transform: translate(1em, 1em);"><text class="h1" y="1em">Late Night</text></g></g>
+  <g class="menu active" id="menu-halal"><g><image class="
+        fade in" width="100%" href="images/halal-chicken.jpeg"></image><image class="
+        fade" width="100%" href="images/halal-falafel.jpeg"></image><image class="
+        fade" width="100%" href="images/halal-falafel2.jpeg"></image></g><rect x="0" y="0" width="100%" height="100%" fill="url(#fill-halal)" filter="url(#filter-halal)" mask="url(#mask-halal)"></rect><g style="transform: translate(1em, 1em);"><text class="h1" y="1em">Halal Food</text><text class="h2" x="24em" y="3em">Platter</text><g style="transform: translate(0, 3rem);"><text y="1rem">Lamb Gyro</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem"></text><text y="1.3rem" x="24rem">$6.00</text></g><g style="transform: translate(0, 5rem);"><text y="1rem">Chicken Gyro</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem"></text><text y="1.3rem" x="24rem">$6.00</text></g><g style="transform: translate(0, 7rem);"><text y="1rem">Falafel Gyro</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem"></text><text y="1.3rem" x="24rem">$6.00</text></g><g style="transform: translate(0, 9rem);"><text y="1rem">Chicken over Rice</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem"></text><text y="1.3rem" x="24rem">$6.00</text></g><g style="transform: translate(0, 11rem);"><text y="1rem">Lamb over Rice</text><text y="1.6rem" style="font-size: 0.6em;"></text><text y="1.3rem" x="20rem"></text><text y="1.3rem" x="24rem">$6.00</text></g></g></g>
+</svg></body>
+</html>

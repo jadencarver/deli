@@ -1,0 +1,221 @@
+<?xml version="1.0"?>
+<menus>
+  <menu meal="beverage" start="0.00" end="24.00">
+    <title>Beverages</title>
+    <item name="Tea">
+      <small>$1.00</small>
+      <large>$1.50</large>
+    </item>
+    <item name="Coffee">
+      <small>$2.00</small>
+      <large>$3.00</large>
+    </item>
+    <item name="Flavor Tea">
+      <small>$1.00</small>
+      <large>$1.50</large>
+    </item>
+    <item name="Cappuccino">
+      <small>$1.00</small>
+      <large>$1.50</large>
+    </item>
+    <item name="Hot Chocolate">
+      <small>$1.00</small>
+      <large>$1.50</large>
+    </item>
+    <item name="French Vanilla">
+      <small>$1.00</small>
+      <large>$1.50</large>
+    </item>
+    <image src="beverages-all.jpeg"/>
+    <image src="beverages-coffee.jpeg"/>
+    <image src="beverages-tea.jpeg"/>
+    <image src="beverages-coffee2.jpeg"/>
+  </menu>
+  <menu meal="breakfast" start="5.00" end="12.00">
+    <title>Breakfast Menu</title>
+    <item name="BLT">
+      <desc>Bacon, Lettuce, Tomato</desc>
+      <roll>$4.00</roll>
+      <hero>$5.00</hero>
+    </item>
+    <item name="Egg &amp; Cheese">
+      <roll>$2.00</roll>
+      <hero>$3.00</hero>
+    </item>
+    <item name="Bacon, Eggs &amp; Cheese">
+      <roll>$3.50</roll>
+      <hero>$4.50</hero>
+    </item>
+    <item name="Pattie Sausage, Eggs &amp; Cheese">
+      <roll>$3.00</roll>
+      <hero>$4.00</hero>
+    </item>
+    <item name="Link Sausage, Eggs &amp; Cheese">
+      <roll>$3.50</roll>
+    </item>
+    <item name="Beef or Turkey, Eggs &amp; Cheese">
+      <roll>$4.00</roll>
+      <hero>$5.00</hero>
+    </item>
+    <item name="Pastrami, Eggs &amp; Cheese">
+      <roll>$4.50</roll>
+      <hero>$5.50</hero>
+    </item>
+    <image src="breakfast-panini.jpeg"/>
+  </menu>
+  <menu meal="breakfast2" start="5.00" end="12.00">
+    <title>Breakfast</title>
+    <item name="Avacado Toast">
+      <desc>Avacado, Tomato, Feta Cheese</desc>
+      <plain>$4.00</plain>
+    </item>
+    <item name="Pancakes">
+      <plain>$5.00</plain>
+      <platter>$6.00</platter>
+    </item>
+    <item name="French Toast">
+      <plain>$4.00</plain>
+      <platter>$5.00</platter>
+    </item>
+    <item name="Homefries">
+      <desc>Bacon or Sausage</desc>
+      <plain>$3.00</plain>
+      <platter>$5.00</platter>
+    </item>
+    <item name="Homefries with Cheese">
+      <plain>$4.00</plain>
+      <platter>$6.00</platter>
+    </item>
+    <item name="Western Omlette">
+      <plain>$4.00</plain>
+    </item>
+    <item name="Egg White Omlette">
+      <desc>Spinach, Onions, Peppers, Tomato</desc>
+      <plain>$4.00</plain>
+    </item>
+    <item name="Monte Cristo">
+      <desc>French Toast, Turkey Ham, Swiss Cheese, and Egg</desc>
+      <plain>$5.50</plain>
+    </item>
+    <image src="breakfast-platter.jpeg"/>
+    <image src="breakfast2-avocadotoast.jpeg"/>
+    <image src="breakfast2-avocadotoast2.jpeg"/>
+    <image src="breakfast-frenchtoast.jpeg"/>
+    <image src="breakfast-pancakes.jpeg"/>
+    <image src="breakfast-pancakes2.jpeg"/>
+    <image src="breakfast-pancakes3.jpeg"/>
+  </menu>
+  <menu meal="lunch" start="0.00" end="24.00" disabled="1">
+    <title>Lunch</title>
+    <item name="Philly Cheese Steak">
+      <roll>$4.00</roll>
+      <hero>$5.00</hero>
+    </item>
+    <item name="Tuna Melt">
+      <roll>$5.00</roll>
+      <hero>$6.00</hero>
+    </item>
+    <item name="Meatball Chicken Parm">
+      <roll>$4.00</roll>
+      <hero>$5.00</hero>
+    </item>
+    <item name="Chopped Cheese">
+      <roll>$4.00</roll>
+      <hero>$5.00</hero>
+    </item>
+    <item name="Chicken Cutlet">
+      <roll>$4.00</roll>
+      <hero>$5.00</hero>
+    </item>
+    <item name="Grilled Chicken BBQ">
+      <roll>$4.00</roll>
+      <hero>$5.00</hero>
+    </item>
+    <item name="Lemon Grilled Chicken">
+      <roll>$4.00</roll>
+      <hero>$5.00</hero>
+    </item>
+    <item name="Teriyaki Chicken">
+      <roll>$4.00</roll>
+      <hero>$5.00</hero>
+    </item>
+    <item name="Chicken Fajita">
+      <roll>$4.00</roll>
+      <hero>$5.00</hero>
+    </item>
+    <item name="Buffalo Chicken">
+      <roll>$4.00</roll>
+      <hero>$5.00</hero>
+    </item>
+    <image src="lunch-chicken-parm.jpeg"/>
+    <image src="lunch-chicken-parm.jpeg"/>
+  </menu>
+  <menu meal="dinner" start="15.00" end="20.00" disabled="1">
+    <title>Dinner</title>
+    <item name="Philly Cheese Steak">
+      <roll>$4.00</roll>
+      <hero>$5.00</hero>
+    </item>
+    <item name="Tuna Melt">
+      <roll>$5.00</roll>
+      <hero>$6.00</hero>
+    </item>
+    <item name="Meatball Chicken Parm">
+      <roll>$4.00</roll>
+      <hero>$5.00</hero>
+    </item>
+    <item name="Chopped Cheese">
+      <roll>$4.00</roll>
+      <hero>$5.00</hero>
+    </item>
+    <item name="Chicken Cutlet">
+      <roll>$4.00</roll>
+      <hero>$5.00</hero>
+    </item>
+    <item name="Grilled Chicken BBQ">
+      <roll>$4.00</roll>
+      <hero>$5.00</hero>
+    </item>
+    <item name="Lemon Grilled Chicken">
+      <roll>$4.00</roll>
+      <hero>$5.00</hero>
+    </item>
+    <item name="Teriyaki Chicken">
+      <roll>$4.00</roll>
+      <hero>$5.00</hero>
+    </item>
+    <item name="Chicken Fajita">
+      <roll>$4.00</roll>
+      <hero>$5.00</hero>
+    </item>
+    <item name="Buffalo Chicken">
+      <roll>$4.00</roll>
+      <hero>$5.00</hero>
+    </item>
+    <image src="lunch-chicken-parm.jpeg"/>
+  </menu>
+  <menu meal="late" start="20.00" end="5.00" disabled="1">
+    <title>Late Night</title>
+  </menu>
+  <menu meal="halal" start="0.00" end="24.00">
+    <title>Halal Food</title>
+    <item name="Lamb Gyro">
+      <platter>$6.00</platter>
+    </item>
+    <item name="Chicken Gyro">
+      <platter>$6.00</platter>
+    </item>
+    <item name="Falafel Gyro">
+      <platter>$6.00</platter>
+    </item>
+    <item name="Chicken over Rice">
+      <platter>$6.00</platter>
+    </item>
+    <item name="Lamb over Rice">
+      <platter>$6.00</platter>
+    </item>
+    <image src="halal-chicken.jpeg"/>
+    <image src="halal-falafel.jpeg"/>
+    <image src="halal-falafel2.jpeg"/>
+  </menu>
+</menus>
