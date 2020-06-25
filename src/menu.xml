@@ -64,9 +64,9 @@
     <image src="breakfast-panini.jpeg"/>
   </menu>
   <menu meal="breakfast2" start="5.00" end="12.00">
-    <title>Breakfast</title>
-    <item name="Avacado Toast">
-      <desc>Avacado, Tomato, Feta Cheese</desc>
+    <title>Breakfast Menu</title>
+    <item name="Avocado Toast">
+      <desc>Avocado, Tomato, Feta Cheese</desc>
       <plain>$4.00</plain>
     </item>
     <item name="Pancakes">
@@ -149,53 +149,6 @@
     </item>
     <image src="lunch-chicken-parm.jpeg"/>
     <image src="lunch-chicken-parm.jpeg"/>
-  </menu>
-  <menu meal="dinner" start="15.00" end="20.00" disabled="1">
-    <title>Dinner</title>
-    <item name="Philly Cheese Steak">
-      <roll>$4.00</roll>
-      <hero>$5.00</hero>
-    </item>
-    <item name="Tuna Melt">
-      <roll>$5.00</roll>
-      <hero>$6.00</hero>
-    </item>
-    <item name="Meatball Chicken Parm">
-      <roll>$4.00</roll>
-      <hero>$5.00</hero>
-    </item>
-    <item name="Chopped Cheese">
-      <roll>$4.00</roll>
-      <hero>$5.00</hero>
-    </item>
-    <item name="Chicken Cutlet">
-      <roll>$4.00</roll>
-      <hero>$5.00</hero>
-    </item>
-    <item name="Grilled Chicken BBQ">
-      <roll>$4.00</roll>
-      <hero>$5.00</hero>
-    </item>
-    <item name="Lemon Grilled Chicken">
-      <roll>$4.00</roll>
-      <hero>$5.00</hero>
-    </item>
-    <item name="Teriyaki Chicken">
-      <roll>$4.00</roll>
-      <hero>$5.00</hero>
-    </item>
-    <item name="Chicken Fajita">
-      <roll>$4.00</roll>
-      <hero>$5.00</hero>
-    </item>
-    <item name="Buffalo Chicken">
-      <roll>$4.00</roll>
-      <hero>$5.00</hero>
-    </item>
-    <image src="lunch-chicken-parm.jpeg"/>
-  </menu>
-  <menu meal="late" start="20.00" end="5.00" disabled="1">
-    <title>Late Night</title>
   </menu>
   <menu meal="halal" start="0.00" end="24.00">
     <title>Halal Food</title>
