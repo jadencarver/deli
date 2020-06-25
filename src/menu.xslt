@@ -1,27 +1,28 @@
 <?xml version="1.0"?>
 
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-  <xsl:param name="time" select="current-time()" />
+  <xsl:param name="time" />
   <xsl:template match="/menus">
     <html>
       <head>
         <title>ALI 2023 DELI GROCERY - BREAKFAST</title>
-        <meta http-equiv="refresh" content="30" />
+        <meta http-equiv="refresh" content="120" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&amp;display=swap" rel="stylesheet" />
         <style>
           html, body, svg {
             width: 100%; height: 100%; position: relative;
             margin: 0; padding: 0;
-            font-family: "Futura", Helvetica, sans-serif;
+            font-family: 'Roboto Condensed', Helvetica, sans-serif;
             font-size: 25pt;
+            font-weight: 700;
           }
           svg text {
             text-shadow: 2pt 2pt #000;
             fill: white;
           }
           svg text.h1 {
-            font-family: "Gill Sans", Helvetica, sans-serif;
             font-size: 2em;
-            font-weight: 200;
+            font-weight: 400;
           }
           svg image.fade {
             opacity: 0;
@@ -101,6 +102,11 @@
               <stop offset="50%" style="stop-color:rgba(0,0,0,0)" />
               <stop offset="90%" style="stop-color:rgba(0,0,0,1.0)" />
             </linearGradient>
+            <linearGradient id="fill-breakfast2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="25%" style="stop-color:rgba(0,0,0,0.3)" />
+              <stop offset="50%" style="stop-color:rgba(0,0,0,0)" />
+              <stop offset="90%" style="stop-color:rgba(0,0,0,1.0)" />
+            </linearGradient>
             <linearGradient id="fill-halal" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="25%" style="stop-color:rgba(0,0,0,0.3)" />
               <stop offset="50%" style="stop-color:rgba(0,0,0,0)" />
@@ -117,7 +123,7 @@
   </xsl:template>
 
   <xsl:template match="/menus/menu">
-    <g class="menu">
+    <g class="menu active">
       <xsl:attribute name="id">menu-<xsl:value-of select="@meal" /></xsl:attribute>
       <xsl:if test="not(@disabled) and $time &gt;= @start and $time &lt; @end">
         <xsl:attribute name="class">menu active</xsl:attribute>
