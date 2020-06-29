@@ -15,6 +15,7 @@
             font-family: 'Roboto Condensed', Helvetica, sans-serif;
             font-size: 25pt;
             font-weight: 700;
+            background-color: black;
           }
           svg text {
             text-shadow: 2pt 2pt #000;
